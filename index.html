@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delicious Bites Restaurant</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .hero-section {
+            background-image: url('hero-image.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .menu-item img {
+            width: 100%;
+            height: auto;
+        }
+
+        .footer {
+            background-color: #f8f9fa;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header class="bg-dark text-white">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <a class="navbar-brand" href="#">Delicious Bites</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div>
+            <h1 class="display-4">Welcome to Delicious Bites</h1>
+            <p class="lead">Experience the best culinary delights</p>
+            <a href="#menu" class="btn btn-primary btn-lg">Explore Menu</a>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="container my-5">
+        <h2 class="text-center mb-4">Our Menu</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card menu-item">
+                    <img src="dish1.jpg" class="card-img-top" alt="Dish 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Dish 1</h5>
+                        <p class="card-text">A delicious dish with fresh ingredients.</p>
+                        <p class="card-text"><strong>$15.00</strong></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card menu-item">
+                    <img src="dish2.jpg" class="card-img-top" alt="Dish 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Dish 2</h5>
+                        <p class="card-text">A savory meal perfect for any time of the day.</p>
+                        <p class="card-text"><strong>$18.00</strong></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card menu-item">
+                    <img src="dish3.jpg" class="card-img-top" alt="Dish 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Dish 3</h5>
+                        <p class="card-text">A mouthwatering dish with unique flavors.</p>
+                        <p class="card-text"><strong>$20.00</strong></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="container my-5">
+        <h2 class="text-center mb-4">About Us</h2>
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <img src="about-us.jpg" class="img-fluid rounded" alt="About Us">
+            </div>
+            <div class="col-md-6">
+                <p>Welcome to Delicious Bites, where we serve delightful dishes crafted with passion and care. Our
+                    restaurant is known for its cozy ambiance and top-quality cuisine, made from the freshest
+                    ingredients. Whether you're here for a quick bite or a special celebration, we're dedicated to
+                    providing you with an unforgettable dining experience.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container my-5">
+        <h2 class="text-center mb-4">Contact Us</h2>
+        <form>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Your Name">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Your Email">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea class="form-control" id="message" rows="4" placeholder="Your Message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-light text-center">
+        <p class="mb-0">&copy; 2024 Delicious Bites. All rights reserved.</p>
+        <div class="mt-2">
+            <a href="#" class="mr-3"><img src="facebook-icon.png" alt="Facebook" width="24"></a>
+            <a href="#" class="mr-3"><img src="twitter-icon.png" alt="Twitter" width="24"></a>
+            <a href="#"><img src="instagram-icon.png" alt="Instagram" width="24"></a>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
